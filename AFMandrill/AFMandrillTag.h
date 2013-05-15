@@ -25,6 +25,10 @@
 
 #import "AFMandrillObject.h"
 
+@class AFMandrillStats;
 @interface AFMandrillTag : AFMandrillObject
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) AFMandrillObject *stats;
 
 @end

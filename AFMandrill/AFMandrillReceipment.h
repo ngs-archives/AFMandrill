@@ -1,5 +1,5 @@
 //
-//  AFMandrillStat.m
+//  AFMandrillReceipment.h
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,8 +23,10 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillStat.h"
+#import "AFMandrillObject.h"
 
-@implementation AFMandrillStat
+@interface AFMandrillReceipment : AFMandrillObject
+
+
 
 @end

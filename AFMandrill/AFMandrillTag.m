@@ -24,7 +24,16 @@
 //
 
 #import "AFMandrillTag.h"
+#import "AFMandrillStats.h"
 
 @implementation AFMandrillTag
+
+- (id)initWithDictionary:(NSDictionary *)dictionary {
+  if(self = [super initWithDictionary:dictionary]) {
+    self.stats = [[AFMandrillStats alloc] initWithDictionary:dictionary];
+    self.name = dictionary[@"tag"];
+  }
+  return self;
+}
 
 @end

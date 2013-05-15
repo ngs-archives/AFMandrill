@@ -1,5 +1,5 @@
 //
-//  AFMandrillMessageTransaction.m
+//  AFMandrillStats.m
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -21,16 +21,38 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+//
 
-#import "AFMandrillMessageTransaction.h"
+#import "AFMandrillStats.h"
 
-@implementation AFMandrillMessageTransaction
+@implementation AFMandrillStats
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
   if(self = [super initWithDictionary:dictionary]) {
-    self.transactionID = dictionary[@"_id"];
-    self.status = dictionary[@"status"];
-    self.emailAddress = dictionary[@"email"];
+
+    if([dictionary[@"sent"] isKindOfClass:[NSNumber class]])
+      self.sent = [dictionary[@"sent"] integerValue];
+
+    if([dictionary[@"hard_bounces"] isKindOfClass:[NSNumber class]])
+      self.hardBounces = [dictionary[@"hard_bounces"] integerValue];
+
+    if([dictionary[@"soft_bounces"] isKindOfClass:[NSNumber class]])
+      self.softBounces = [dictionary[@"soft_bounces"] integerValue];
+
+    if([dictionary[@"rejects"] isKindOfClass:[NSNumber class]])
+      self.rejects = [dictionary[@"rejects"] integerValue];
+
+    if([dictionary[@"complaints"] isKindOfClass:[NSNumber class]])
+      self.complaints = [dictionary[@"complaints"] integerValue];
+
+    if([dictionary[@"unsubs"] isKindOfClass:[NSNumber class]])
+      self.unsubscribes = [dictionary[@"unsubs"] integerValue];
+
+    if([dictionary[@"clicks"] isKindOfClass:[NSNumber class]])
+      self.sent = [dictionary[@"clicks"] integerValue];
+
+    if([dictionary[@"opens"] isKindOfClass:[NSNumber class]])
+      self.opens = [dictionary[@"opens"] integerValue];
   }
   return self;
 }

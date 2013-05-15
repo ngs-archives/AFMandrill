@@ -1,5 +1,5 @@
 //
-//  AFMandrillStat.h
+//  AFMandrillStats.h
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -25,6 +25,15 @@
 
 #import "AFMandrillObject.h"
 
-@interface AFMandrillStat : AFMandrillObject
+@interface AFMandrillStats : AFMandrillObject
+
+@property (nonatomic, assign) NSInteger sent;
+@property (nonatomic, assign) NSInteger hardBounces;
+@property (nonatomic, assign) NSInteger rejects;
+@property (nonatomic, assign) NSInteger softBounces;
+@property (nonatomic, assign) NSInteger complaints;
+@property (nonatomic, assign) NSInteger unsubscribes;
+@property (nonatomic, assign) NSInteger opens;
+@property (nonatomic, assign) NSInteger clicks;
 
 @end

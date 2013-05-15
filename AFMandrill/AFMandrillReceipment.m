@@ -1,5 +1,5 @@
 //
-//  AFMandrillMessageContext.m
+//  AFMandrillReceipment.m
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,12 +23,8 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillMessageContext.h"
+#import "AFMandrillReceipment.h"
 
-@implementation AFMandrillMessageContext
-
-- (BOOL)hasTemplate {
-  return self.templateName && self.templateName.length > 0;
-}
+@implementation AFMandrillReceipment
 
 @end

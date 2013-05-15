@@ -7,6 +7,8 @@
 //
 
 #import "AFMandrillViewController.h"
+#import "AFMandrill.h"
+
 
 @interface AFMandrillViewController ()
 
@@ -15,7 +17,10 @@
 @implementation AFMandrillViewController
 
 - (IBAction)openConcats:(id)sender {
-  
+  AFMandrillClient *c = [[AFMandrillClient alloc] initWithKey:@"GAxl4K_RREaqAH2p5sPpuA"];
+  [c ping:^(NSString *pong, NSError *error) {
+
+  }];
 }
 
 @end

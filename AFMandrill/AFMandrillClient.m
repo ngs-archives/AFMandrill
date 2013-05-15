@@ -23,28 +23,31 @@
 //  THE SOFTWARE.
 //
 
-#include "AFMandrillActivitySearch.h"
-#include "AFMandrillClient.h"
-#include "AFMandrillDomain.h"
-#include "AFMandrillEmailAddress.h"
-#include "AFMandrillError.h"
-#include "AFMandrillExportTask.h"
-#include "AFMandrillMessage.h"
-#include "AFMandrillMessageContext.h"
-#include "AFMandrillMessageSearch.h"
-#include "AFMandrillMessageTransaction.h"
-#include "AFMandrillObject.h"
-#include "AFMandrillRawMessage.h"
-#include "AFMandrillRequestOperation.h"
-#include "AFMandrillResponse.h"
-#include "AFMandrillSender.h"
-#include "AFMandrillStat.h"
-#include "AFMandrillTag.h"
-#include "AFMandrillTemplate.h"
-#include "AFMandrillTime.h"
-#include "AFMandrillURL.h"
-#include "AFMandrillUser.h"
-#include "AFMandrillWebhook.h"
+#import "AFMandrillActivitySearch.h"
+#import "AFMandrillAttachment.h"
+#import "AFMandrillClient.h"
+#import "AFMandrillDomain.h"
+#import "AFMandrillEmailAddress.h"
+#import "AFMandrillError.h"
+#import "AFMandrillExportTask.h"
+#import "AFMandrillImage.h"
+#import "AFMandrillMessage.h"
+#import "AFMandrillMessageContext.h"
+#import "AFMandrillMessageSearch.h"
+#import "AFMandrillMessageTransaction.h"
+#import "AFMandrillObject.h"
+#import "AFMandrillRawMessage.h"
+#import "AFMandrillReceipment.h"
+#import "AFMandrillRequestOperation.h"
+#import "AFMandrillResponse.h"
+#import "AFMandrillSender.h"
+#import "AFMandrillStats.h"
+#import "AFMandrillTag.h"
+#import "AFMandrillTemplate.h"
+#import "AFMandrillTime.h"
+#import "AFMandrillURL.h"
+#import "AFMandrillUser.h"
+#import "AFMandrillWebhook.h"
 
 NSString *const kAFMandrillBaseURLString = @"https://mandrillapp.com/api/1.0/";
 
@@ -102,6 +105,7 @@ NSString *const kAFMandrillBaseURLString = @"https://mandrillapp.com/api/1.0/";
 - (id)initWithKey:(NSString *)key {
   if(self = [super initWithBaseURL:[NSURL URLWithString:kAFMandrillBaseURLString]]) {
     self.apiKey = key;
+    [self registerHTTPOperationClass:[AFMandrillRequestOperation class]];
   }
   return self;
 }
@@ -123,11 +127,14 @@ NSString *const kAFMandrillBaseURLString = @"https://mandrillapp.com/api/1.0/";
 
 - (void)ping:(void (^)(NSString *pong, NSError *error))handler {
   [self
-   postPath:@"users/ping.json"
+   postPath:@"users/ping2.json"
    parameters:nil
    itemClass:nil
    success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
-     handler(operation.responseString, nil);
+     NSString *pong = nil;
+     if([operation.responseJSON isKindOfClass:[NSDictionary class]])
+       pong = operation.responseJSON[@"PING"];
+     handler(pong, nil);
    }
    failure:^(AFMandrillRequestOperation *operation, NSError *error) {
      handler(nil, error);
@@ -151,32 +158,92 @@ NSString *const kAFMandrillBaseURLString = @"https://mandrillapp.com/api/1.0/";
 
 - (void)sendMessage:(AFMandrillMessageContext *)message
         withHandler:(void (^)(NSArray *results, NSError *error))handler {
-
+  NSString *path = message.hasTemplate ? @"send-template" : @"send";
+  [self
+   postPath:path parameters:message.asJSON
+   itemClass:[AFMandrillMessageTransaction class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.all, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil , error);
+   }];
 }
 
 - (void)searchMessage:(AFMandrillMessageSearch *)search
           withHandler:(void (^)(NSArray *results, NSError *error))handler {
-
+  [self
+   postPath:@"messages/search.json"
+   parameters:search.asJSON
+   itemClass:[AFMandrillMessage class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.all, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil, error);
+   }];
 }
 
 - (void)parseRawMessage:(NSString *)rawMessage
-            withHandler:(void (^)(NSDictionary *message, NSError *error))handler {
-
+            withHandler:(void (^)(AFMandrillMessage *message, NSError *error))handler {
+  [self
+   postPath:@"messages/parse.json"
+   parameters:@{ @"raw_message": rawMessage }
+   itemClass:[AFMandrillMessage class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.first, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil, error);
+   }];
 }
 
 #pragma mark - Tags Calls
 
 - (void)listTags:(void (^)(NSArray *tags, NSError *error))handler {
-
+  [self
+   postPath:@"tags/list.json"
+   parameters:nil
+   itemClass:[AFMandrillTag class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.all, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil, error);
+   }];
 }
 
-- (void)deleteTag:(NSString *)tag
-      withHandler:(void (^)(NSDictionary *tag, NSError *error))handler {
-
+- (void)deleteTag:(AFMandrillTag *)tag
+      withHandler:(void (^)(AFMandrillTag *deletedTag, NSError *error))handler {
+  [self deleteTagWithName:tag.name withHandler:handler];
 }
 
-- (void)getTagInfo:(NSString *)tag
-       withHandler:(void (^)(NSDictionary *info, NSError *error))handler {
+- (void)deleteTagWithName:(NSString *)tagName
+              withHandler:(void (^)(AFMandrillTag *deletedTag, NSError *error))handler {
+  [self
+   postPath:@"tags/delete"
+   parameters:@{ @"tag": tagName }
+   itemClass:[AFMandrillTag class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.first, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil, error);
+   }];
+}
+
+- (void)getTag:(NSString *)tagName
+   withHandler:(void (^)(AFMandrillTag *tag, NSError *error))handler {
+  [self
+   postPath:@""
+   parameters:@{ @"tag": tagName }
+   itemClass:[AFMandrillTag class]
+   success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
+     handler(responseObject.first, nil);
+   }
+   failure:^(AFMandrillRequestOperation *operation, NSError *error) {
+     handler(nil, error);
+   }];
 
 }
 

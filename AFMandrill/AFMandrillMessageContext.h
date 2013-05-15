@@ -27,4 +27,38 @@
 
 @interface AFMandrillMessageContext : AFMandrillObject
 
+@property (nonatomic, copy) NSString *html;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSString *fromEmail;
+@property (nonatomic, copy) NSString *fromName;
+@property (nonatomic, copy) NSString *receipments;
+@property (nonatomic, copy) NSMutableDictionary *headers;
+@property (nonatomic, assign) BOOL important;
+@property (nonatomic, assign) BOOL trackOpens;
+@property (nonatomic, assign) BOOL trackClicks;
+@property (nonatomic, assign) BOOL autoText;
+@property (nonatomic, assign) BOOL autoHtml;
+@property (nonatomic, assign) BOOL inlineCSS;
+@property (nonatomic, assign) BOOL strinpQueriesInURL;
+@property (nonatomic, assign) BOOL preserveRecipients;
+@property (nonatomic, copy) NSString *bccAddress;
+@property (nonatomic, copy) NSString *trackingDomain;
+@property (nonatomic, copy) NSString *signingDomain;
+@property (nonatomic, assign) BOOL merge;
+@property (nonatomic, copy) NSMutableDictionary *globalMergeVars;
+@property (nonatomic, copy) NSMutableDictionary *mergeVars;
+@property (nonatomic, copy) NSMutableArray *tags;
+@property (nonatomic, copy) NSMutableArray *googleAnalyticsDomains;
+@property (nonatomic, copy) NSMutableArray *googleAnalyticsCampaign;
+@property (nonatomic, copy) NSMutableArray *metadata;
+@property (nonatomic, copy) NSMutableArray *recipientMetadata;
+@property (nonatomic, copy) NSMutableArray *attachments;
+@property (nonatomic, copy) NSMutableArray *images;
+@property (nonatomic, assign) BOOL async;
+@property (nonatomic, copy) NSString *templateName;
+@property (nonatomic, copy) NSMutableArray *templateContent;
+
+- (BOOL)hasTemplate;
+
 @end

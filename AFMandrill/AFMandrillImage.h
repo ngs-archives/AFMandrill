@@ -1,5 +1,5 @@
 //
-//  AFMandrillMessageContext.m
+//  AFMandrillImage.h
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,12 +23,14 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillMessageContext.h"
+#import "AFMandrillObject.h"
 
-@implementation AFMandrillMessageContext
+@interface AFMandrillImage : AFMandrillObject
 
-- (BOOL)hasTemplate {
-  return self.templateName && self.templateName.length > 0;
-}
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, copy) NSString *content;
+
+
 
 @end

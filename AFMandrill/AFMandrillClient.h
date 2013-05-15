@@ -32,6 +32,7 @@ AFMandrillActivitySearch,
 AFMandrillMessage,
 AFMandrillTemplate,
 AFMandrillWebhook,
+AFMandrillTag,
 AFMandrillMessageContext,
 AFMandrillExportTask,
 AFMandrillRawMessage,
@@ -60,17 +61,21 @@ AFMandrillMessageSearch;
           withHandler:(void (^)(NSArray *results, NSError *error))handler;
 
 - (void)parseRawMessage:(NSString *)rawMessage
-         withHandler:(void (^)(NSDictionary *message, NSError *error))handler;
+            withHandler:(void (^)(AFMandrillMessage *message, NSError *error))handler;
 
 #pragma mark - Tags Calls
 
 - (void)listTags:(void (^)(NSArray *tags, NSError *error))handler;
 
 - (void)deleteTag:(NSString *)tag
-      withHandler:(void (^)(NSDictionary *tag, NSError *error))handler;
+      withHandler:(void (^)(AFMandrillTag *deletedTag, NSError *error))handler;
 
-- (void)getTagInfo:(NSString *)tag
-       withHandler:(void (^)(NSDictionary *info, NSError *error))handler;
+
+- (void)deleteTagWithName:(NSString *)tagName
+              withHandler:(void (^)(AFMandrillTag *deletedTag, NSError *error))handler;
+
+- (void)getTag:(NSString *)tagName
+   withHandler:(void (^)(AFMandrillTag *tag, NSError *error))handler;
 
 - (void)getTimeSeriesWithTag:(NSString *)tag
                  withHandler:(void (^)(NSArray *timeSeries, NSError *error))handler;

@@ -14,7 +14,7 @@
 		851FC3E51741E6020030D3C5 /* AFMandrillMessageSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E41741E6020030D3C5 /* AFMandrillMessageSearch.m */; };
 		851FC3E8174297C50030D3C5 /* AFMandrillTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E7174297C50030D3C5 /* AFMandrillTemplate.m */; };
 		851FC3EB174297D40030D3C5 /* AFMandrillObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3EA174297D40030D3C5 /* AFMandrillObject.m */; };
-		851FC3EE1742A4490030D3C5 /* AFMandrillStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3ED1742A4490030D3C5 /* AFMandrillStat.m */; };
+		851FC3EE1742A4490030D3C5 /* AFMandrillStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */; };
 		851FC3F11742A45A0030D3C5 /* AFMandrillTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F01742A45A0030D3C5 /* AFMandrillTime.m */; };
 		851FC3F41742A4EB0030D3C5 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */; };
 		851FC3F81742A5980030D3C5 /* AFMandrillURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F71742A5980030D3C5 /* AFMandrillURL.m */; };
@@ -24,7 +24,6 @@
 		851FC4081742A9480030D3C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA281741600E00969824 /* UIKit.framework */; };
 		851FC4091742A9480030D3C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2A1741600E00969824 /* Foundation.framework */; };
 		851FC40F1742A9480030D3C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 851FC40D1742A9480030D3C5 /* InfoPlist.strings */; };
-		851FC4121742A9480030D3C5 /* AFMandrillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC4111742A9480030D3C5 /* AFMandrillTests.m */; };
 		8544BF081742AA1600142059 /* AFMandrillTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF071742AA1600142059 /* AFMandrillTag.m */; };
 		8544BF0E1742AD5200142059 /* AFMandrillDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF0D1742AD5200142059 /* AFMandrillDomain.m */; };
 		8544BF111742AF2400142059 /* AFMandrillRawMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF101742AF2400142059 /* AFMandrillRawMessage.m */; };
@@ -35,6 +34,10 @@
 		8544BF211742BA2A00142059 /* AFMandrillUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF201742BA2A00142059 /* AFMandrillUser.m */; };
 		8544BF241742C35A00142059 /* AFMandrillSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillSender.m */; };
 		8544BF271742C37900142059 /* AFMandrillMessageTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */; };
+		8544BF2E1742D1C200142059 /* AFMandrillUserCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */; };
+		8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
+		8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF331742D8B700142059 /* AFMandrillAttachment.m */; };
+		8544BF371742DB4C00142059 /* AFMandrillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF361742DB4C00142059 /* AFMandrillImage.m */; };
 		8586AA291741600E00969824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA281741600E00969824 /* UIKit.framework */; };
 		8586AA2B1741600E00969824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2A1741600E00969824 /* Foundation.framework */; };
 		8586AA2D1741600E00969824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2C1741600E00969824 /* CoreGraphics.framework */; };
@@ -73,8 +76,8 @@
 		851FC3E7174297C50030D3C5 /* AFMandrillTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTemplate.m; sourceTree = "<group>"; };
 		851FC3E9174297D40030D3C5 /* AFMandrillObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillObject.h; sourceTree = "<group>"; };
 		851FC3EA174297D40030D3C5 /* AFMandrillObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillObject.m; sourceTree = "<group>"; };
-		851FC3EC1742A4490030D3C5 /* AFMandrillStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillStat.h; sourceTree = "<group>"; };
-		851FC3ED1742A4490030D3C5 /* AFMandrillStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillStat.m; sourceTree = "<group>"; };
+		851FC3EC1742A4490030D3C5 /* AFMandrillStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillStats.h; sourceTree = "<group>"; };
+		851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillStats.m; sourceTree = "<group>"; };
 		851FC3EF1742A45A0030D3C5 /* AFMandrillTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillTime.h; sourceTree = "<group>"; };
 		851FC3F01742A45A0030D3C5 /* AFMandrillTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTime.m; sourceTree = "<group>"; };
 		851FC3F21742A4EB0030D3C5 /* AFMandrillEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillEmailAddress.h; sourceTree = "<group>"; };
@@ -90,8 +93,6 @@
 		851FC4061742A9480030D3C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		851FC40C1742A9480030D3C5 /* AFMandrillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFMandrillTests-Info.plist"; sourceTree = "<group>"; };
 		851FC40E1742A9480030D3C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		851FC4101742A9480030D3C5 /* AFMandrillTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFMandrillTests.h; sourceTree = "<group>"; };
-		851FC4111742A9480030D3C5 /* AFMandrillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTests.m; sourceTree = "<group>"; };
 		851FC4131742A9480030D3C5 /* AFMandrillTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFMandrillTests-Prefix.pch"; sourceTree = "<group>"; };
 		8544BF061742AA1600142059 /* AFMandrillTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillTag.h; sourceTree = "<group>"; };
 		8544BF071742AA1600142059 /* AFMandrillTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTag.m; sourceTree = "<group>"; };
@@ -113,6 +114,14 @@
 		8544BF231742C35A00142059 /* AFMandrillSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSender.m; sourceTree = "<group>"; };
 		8544BF251742C37800142059 /* AFMandrillMessageTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillMessageTransaction.h; sourceTree = "<group>"; };
 		8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillMessageTransaction.m; sourceTree = "<group>"; };
+		8544BF2C1742D1C200142059 /* AFMandrillUserCallTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUserCallTests.h; sourceTree = "<group>"; };
+		8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUserCallTests.m; sourceTree = "<group>"; };
+		8544BF2F1742D4C800142059 /* AFMandrillReceipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillReceipment.h; sourceTree = "<group>"; };
+		8544BF301742D4C900142059 /* AFMandrillReceipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillReceipment.m; sourceTree = "<group>"; };
+		8544BF321742D8B700142059 /* AFMandrillAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillAttachment.h; sourceTree = "<group>"; };
+		8544BF331742D8B700142059 /* AFMandrillAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillAttachment.m; sourceTree = "<group>"; };
+		8544BF351742DB4C00142059 /* AFMandrillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillImage.h; sourceTree = "<group>"; };
+		8544BF361742DB4C00142059 /* AFMandrillImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillImage.m; sourceTree = "<group>"; };
 		8586AA251741600E00969824 /* AFMandrill iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFMandrill iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8586AA281741600E00969824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8586AA2A1741600E00969824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,8 +198,8 @@
 				8544BF101742AF2400142059 /* AFMandrillRawMessage.m */,
 				8544BF221742C35A00142059 /* AFMandrillSender.h */,
 				8544BF231742C35A00142059 /* AFMandrillSender.m */,
-				851FC3EC1742A4490030D3C5 /* AFMandrillStat.h */,
-				851FC3ED1742A4490030D3C5 /* AFMandrillStat.m */,
+				851FC3EC1742A4490030D3C5 /* AFMandrillStats.h */,
+				851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */,
 				8544BF061742AA1600142059 /* AFMandrillTag.h */,
 				8544BF071742AA1600142059 /* AFMandrillTag.m */,
 				851FC3E6174297C50030D3C5 /* AFMandrillTemplate.h */,
@@ -203,6 +212,12 @@
 				8544BF201742BA2A00142059 /* AFMandrillUser.m */,
 				851FC3FC1742A8300030D3C5 /* AFMandrillWebhook.h */,
 				851FC3FD1742A8300030D3C5 /* AFMandrillWebhook.m */,
+				8544BF2F1742D4C800142059 /* AFMandrillReceipment.h */,
+				8544BF301742D4C900142059 /* AFMandrillReceipment.m */,
+				8544BF321742D8B700142059 /* AFMandrillAttachment.h */,
+				8544BF331742D8B700142059 /* AFMandrillAttachment.m */,
+				8544BF351742DB4C00142059 /* AFMandrillImage.h */,
+				8544BF361742DB4C00142059 /* AFMandrillImage.m */,
 			);
 			name = "Object Types";
 			sourceTree = "<group>";
@@ -210,9 +225,9 @@
 		851FC40A1742A9480030D3C5 /* AFMandrillTests */ = {
 			isa = PBXGroup;
 			children = (
-				851FC4101742A9480030D3C5 /* AFMandrillTests.h */,
-				851FC4111742A9480030D3C5 /* AFMandrillTests.m */,
 				851FC40B1742A9480030D3C5 /* Supporting Files */,
+				8544BF2C1742D1C200142059 /* AFMandrillUserCallTests.h */,
+				8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */,
 			);
 			path = AFMandrillTests;
 			sourceTree = "<group>";
@@ -454,7 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851FC4121742A9480030D3C5 /* AFMandrillTests.m in Sources */,
+				8544BF2E1742D1C200142059 /* AFMandrillUserCallTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +486,7 @@
 				851FC3E51741E6020030D3C5 /* AFMandrillMessageSearch.m in Sources */,
 				851FC3E8174297C50030D3C5 /* AFMandrillTemplate.m in Sources */,
 				851FC3EB174297D40030D3C5 /* AFMandrillObject.m in Sources */,
-				851FC3EE1742A4490030D3C5 /* AFMandrillStat.m in Sources */,
+				851FC3EE1742A4490030D3C5 /* AFMandrillStats.m in Sources */,
 				851FC3F11742A45A0030D3C5 /* AFMandrillTime.m in Sources */,
 				851FC3F41742A4EB0030D3C5 /* AFMandrillEmailAddress.m in Sources */,
 				851FC3F81742A5980030D3C5 /* AFMandrillURL.m in Sources */,
@@ -487,6 +502,9 @@
 				8544BF211742BA2A00142059 /* AFMandrillUser.m in Sources */,
 				8544BF241742C35A00142059 /* AFMandrillSender.m in Sources */,
 				8544BF271742C37900142059 /* AFMandrillMessageTransaction.m in Sources */,
+				8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */,
+				8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */,
+				8544BF371742DB4C00142059 /* AFMandrillImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
