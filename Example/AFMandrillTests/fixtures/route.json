@@ -1,0 +1,6 @@
+[
+    {
+        "pattern": "mailbox-*",
+        "url": "http://example.com/webhook-url"
+    }
+]

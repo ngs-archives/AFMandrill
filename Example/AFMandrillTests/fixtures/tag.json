@@ -1,0 +1,12 @@
+
+{
+    "tag": "example-tag",
+    "sent": 42,
+    "hard_bounces": 42,
+    "soft_bounces": 42,
+    "rejects": 42,
+    "complaints": 42,
+    "unsubs": 42,
+    "opens": 42,
+    "clicks": 42
+}

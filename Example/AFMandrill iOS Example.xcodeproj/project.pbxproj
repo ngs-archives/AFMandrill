@@ -54,6 +54,7 @@
 		858960291743E8B700951070 /* FoundationNamedAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960261743E8B700951070 /* FoundationNamedAdditions.m */; };
 		8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960281743E8B700951070 /* MockNSHTTPURLResponse.m */; };
 		8589602D1743E90700951070 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589602C1743E90700951070 /* TestHelper.m */; };
+		858960301743F29300951070 /* AFMandrillRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589602F1743F29300951070 /* AFMandrillRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,8 @@
 		858960281743E8B700951070 /* MockNSHTTPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockNSHTTPURLResponse.m; sourceTree = "<group>"; };
 		8589602B1743E90700951070 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		8589602C1743E90700951070 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
+		8589602E1743F29300951070 /* AFMandrillRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillRoute.h; sourceTree = "<group>"; };
+		8589602F1743F29300951070 /* AFMandrillRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillRoute.m; sourceTree = "<group>"; };
 		86F297D5C12D4815B9B939F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E5AE9189C3C24BE9BF35F0FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +188,8 @@
 			children = (
 				8544BF151742B07200142059 /* AFMandrillActivitySearch.h */,
 				8544BF161742B07200142059 /* AFMandrillActivitySearch.m */,
+				8544BF321742D8B700142059 /* AFMandrillAttachment.h */,
+				8544BF331742D8B700142059 /* AFMandrillAttachment.m */,
 				8544BF0C1742AD5200142059 /* AFMandrillDomain.h */,
 				8544BF0D1742AD5200142059 /* AFMandrillDomain.m */,
 				851FC3F21742A4EB0030D3C5 /* AFMandrillEmailAddress.h */,
@@ -193,6 +198,8 @@
 				851FC3E11741DF2C0030D3C5 /* AFMandrillError.m */,
 				8544BF121742AF9300142059 /* AFMandrillExportTask.h */,
 				8544BF131742AF9300142059 /* AFMandrillExportTask.m */,
+				8544BF351742DB4C00142059 /* AFMandrillImage.h */,
+				8544BF361742DB4C00142059 /* AFMandrillImage.m */,
 				851FC3DD1741DE820030D3C5 /* AFMandrillMessage.h */,
 				851FC3DE1741DE820030D3C5 /* AFMandrillMessage.m */,
 				851FC3F91742A7850030D3C5 /* AFMandrillMessageContext.h */,
@@ -205,6 +212,10 @@
 				851FC3EA174297D40030D3C5 /* AFMandrillObject.m */,
 				8544BF0F1742AF2400142059 /* AFMandrillRawMessage.h */,
 				8544BF101742AF2400142059 /* AFMandrillRawMessage.m */,
+				8544BF2F1742D4C800142059 /* AFMandrillReceipment.h */,
+				8544BF301742D4C900142059 /* AFMandrillReceipment.m */,
+				8589602E1743F29300951070 /* AFMandrillRoute.h */,
+				8589602F1743F29300951070 /* AFMandrillRoute.m */,
 				8544BF221742C35A00142059 /* AFMandrillSender.h */,
 				8544BF231742C35A00142059 /* AFMandrillSender.m */,
 				851FC3EC1742A4490030D3C5 /* AFMandrillStats.h */,
@@ -221,12 +232,6 @@
 				8544BF201742BA2A00142059 /* AFMandrillUser.m */,
 				851FC3FC1742A8300030D3C5 /* AFMandrillWebhook.h */,
 				851FC3FD1742A8300030D3C5 /* AFMandrillWebhook.m */,
-				8544BF2F1742D4C800142059 /* AFMandrillReceipment.h */,
-				8544BF301742D4C900142059 /* AFMandrillReceipment.m */,
-				8544BF321742D8B700142059 /* AFMandrillAttachment.h */,
-				8544BF331742D8B700142059 /* AFMandrillAttachment.m */,
-				8544BF351742DB4C00142059 /* AFMandrillImage.h */,
-				8544BF361742DB4C00142059 /* AFMandrillImage.m */,
 			);
 			name = "Object Types";
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				858960291743E8B700951070 /* FoundationNamedAdditions.m in Sources */,
 				8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */,
 				8589602D1743E90700951070 /* TestHelper.m in Sources */,
+				858960301743F29300951070 /* AFMandrillRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

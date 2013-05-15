@@ -40,6 +40,7 @@
 #import "AFMandrillReceipment.h"
 #import "AFMandrillRequestOperation.h"
 #import "AFMandrillResponse.h"
+#import "AFMandrillRoute.h"
 #import "AFMandrillSender.h"
 #import "AFMandrillStats.h"
 #import "AFMandrillTag.h"

@@ -1,5 +1,5 @@
 //
-//  AFMandrill.h
+//  AFMandrillRoute.h
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,29 +23,8 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillActivitySearch.h"
-#import "AFMandrillAttachment.h"
-#import "AFMandrillClient.h"
-#import "AFMandrillDomain.h"
-#import "AFMandrillEmailAddress.h"
-#import "AFMandrillError.h"
-#import "AFMandrillExportTask.h"
-#import "AFMandrillImage.h"
-#import "AFMandrillMessage.h"
-#import "AFMandrillMessageContext.h"
-#import "AFMandrillMessageSearch.h"
-#import "AFMandrillMessageTransaction.h"
 #import "AFMandrillObject.h"
-#import "AFMandrillRawMessage.h"
-#import "AFMandrillReceipment.h"
-#import "AFMandrillRequestOperation.h"
-#import "AFMandrillResponse.h"
-#import "AFMandrillRoute.h"
-#import "AFMandrillSender.h"
-#import "AFMandrillStats.h"
-#import "AFMandrillTag.h"
-#import "AFMandrillTemplate.h"
-#import "AFMandrillTime.h"
-#import "AFMandrillURL.h"
-#import "AFMandrillUser.h"
-#import "AFMandrillWebhook.h"
+
+@interface AFMandrillRoute : AFMandrillObject
+
+@end
