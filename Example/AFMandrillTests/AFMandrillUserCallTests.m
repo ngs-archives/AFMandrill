@@ -7,6 +7,7 @@
 //
 
 #import "AFMandrillUserCallTests.h"
+#import "TestHelper.h"
 
 @implementation AFMandrillUserCallTests
 

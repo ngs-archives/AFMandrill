@@ -51,6 +51,9 @@
 		8586AA451741600E00969824 /* AFMandrillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586AA441741600E00969824 /* AFMandrillViewController.m */; };
 		8586AA4E174160BC00969824 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA4D174160BC00969824 /* MobileCoreServices.framework */; };
 		8586AA50174160C100969824 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA4F174160C100969824 /* SystemConfiguration.framework */; };
+		858960291743E8B700951070 /* FoundationNamedAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960261743E8B700951070 /* FoundationNamedAdditions.m */; };
+		8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960281743E8B700951070 /* MockNSHTTPURLResponse.m */; };
+		8589602D1743E90700951070 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589602C1743E90700951070 /* TestHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,12 @@
 		8586AA441741600E00969824 /* AFMandrillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFMandrillViewController.m; sourceTree = "<group>"; };
 		8586AA4D174160BC00969824 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8586AA4F174160C100969824 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		858960251743E8B700951070 /* FoundationNamedAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationNamedAdditions.h; sourceTree = "<group>"; };
+		858960261743E8B700951070 /* FoundationNamedAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationNamedAdditions.m; sourceTree = "<group>"; };
+		858960271743E8B700951070 /* MockNSHTTPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockNSHTTPURLResponse.h; sourceTree = "<group>"; };
+		858960281743E8B700951070 /* MockNSHTTPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockNSHTTPURLResponse.m; sourceTree = "<group>"; };
+		8589602B1743E90700951070 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		8589602C1743E90700951070 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		86F297D5C12D4815B9B939F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E5AE9189C3C24BE9BF35F0FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,6 +234,7 @@
 		851FC40A1742A9480030D3C5 /* AFMandrillTests */ = {
 			isa = PBXGroup;
 			children = (
+				858960241743E8B700951070 /* helpers */,
 				851FC40B1742A9480030D3C5 /* Supporting Files */,
 				8544BF2C1742D1C200142059 /* AFMandrillUserCallTests.h */,
 				8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */,
@@ -326,6 +336,19 @@
 			);
 			name = AFMandrill;
 			path = ../AFMandrill;
+			sourceTree = "<group>";
+		};
+		858960241743E8B700951070 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				858960251743E8B700951070 /* FoundationNamedAdditions.h */,
+				858960261743E8B700951070 /* FoundationNamedAdditions.m */,
+				858960271743E8B700951070 /* MockNSHTTPURLResponse.h */,
+				858960281743E8B700951070 /* MockNSHTTPURLResponse.m */,
+				8589602B1743E90700951070 /* TestHelper.h */,
+				8589602C1743E90700951070 /* TestHelper.m */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,6 +493,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8544BF2E1742D1C200142059 /* AFMandrillUserCallTests.m in Sources */,
+				858960291743E8B700951070 /* FoundationNamedAdditions.m in Sources */,
+				8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */,
+				8589602D1743E90700951070 /* TestHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
