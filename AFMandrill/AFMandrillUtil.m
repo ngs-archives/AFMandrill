@@ -48,4 +48,8 @@
   return 0;
 }
 
++ (BOOL)boolFromObject:(id)object {
+  return [object respondsToSelector:@selector(boolValue)] && [object boolValue];
+}
+
 @end

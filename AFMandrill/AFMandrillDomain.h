@@ -27,4 +27,8 @@
 
 @interface AFMandrillDomain : AFMandrillObject
 
+@property (nonatomic, assign) BOOL isValidMX;
+@property (nonatomic, copy) NSDate *createdAt;
+@property (nonatomic, copy) NSString *name;
+
 @end

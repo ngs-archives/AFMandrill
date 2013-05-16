@@ -24,7 +24,17 @@
 //
 
 #import "AFMandrillDomain.h"
+#import "AFMandrillUtil.h"
 
 @implementation AFMandrillDomain
+
+- (id)initWithDictionary:(NSDictionary *)dictionary {
+  if(self = [super initWithDictionary:dictionary]) {
+    self.name = dictionary[@"domain"];
+    self.createdAt = [AFMandrillUtil dateFromString:dictionary[@"created_at"]];
+    self.isValidMX = [AFMandrillUtil boolFromObject:dictionary[@"valid_mx"]];
+  }
+  return self;
+}
 
 @end

@@ -109,6 +109,7 @@
 		85896081174407A100951070 /* AFMandrillUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589607F174407A100951070 /* AFMandrillUtil.m */; };
 		85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */; };
 		85B70C4C1744AC5300981DB6 /* AFMandrillTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */; };
+		85B70C4F1744AE5000981DB6 /* AFMandrillDomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4E1744AE4F00981DB6 /* AFMandrillDomainTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +234,8 @@
 		85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSenderTests.m; sourceTree = "<group>"; };
 		85B70C4A1744AC5200981DB6 /* AFMandrillTagTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillTagTests.h; sourceTree = "<group>"; };
 		85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTagTests.m; sourceTree = "<group>"; };
+		85B70C4D1744AE4F00981DB6 /* AFMandrillDomainTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillDomainTests.h; sourceTree = "<group>"; };
+		85B70C4E1744AE4F00981DB6 /* AFMandrillDomainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillDomainTests.m; sourceTree = "<group>"; };
 		86F297D5C12D4815B9B939F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E5AE9189C3C24BE9BF35F0FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -333,6 +336,8 @@
 				85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */,
 				85B70C4A1744AC5200981DB6 /* AFMandrillTagTests.h */,
 				85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */,
+				85B70C4D1744AE4F00981DB6 /* AFMandrillDomainTests.h */,
+				85B70C4E1744AE4F00981DB6 /* AFMandrillDomainTests.m */,
 			);
 			path = AFMandrillTests;
 			sourceTree = "<group>";
@@ -686,6 +691,7 @@
 				85896081174407A100951070 /* AFMandrillUtil.m in Sources */,
 				85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */,
 				85B70C4C1744AC5300981DB6 /* AFMandrillTagTests.m in Sources */,
+				85B70C4F1744AE5000981DB6 /* AFMandrillDomainTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

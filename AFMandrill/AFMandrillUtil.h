@@ -29,5 +29,6 @@
 
 + (NSDate *)dateFromString:(NSString *)dateString;
 + (NSInteger)integerFromObject:(id)object;
++ (BOOL)boolFromObject:(id)object;
 
 @end
