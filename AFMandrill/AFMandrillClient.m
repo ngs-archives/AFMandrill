@@ -41,7 +41,7 @@
 #import "AFMandrillRequestOperation.h"
 #import "AFMandrillResponse.h"
 #import "AFMandrillRoute.h"
-#import "AFMandrillSender.h"
+#import "AFMandrillEmailAddress.h"
 #import "AFMandrillStats.h"
 #import "AFMandrillTag.h"
 #import "AFMandrillTemplate.h"
@@ -146,7 +146,7 @@ NSString *const kAFMandrillBaseURLString = @"https://mandrillapp.com/api/1.0/";
   [self
    postPath:@"users/senders.json"
    parameters:nil
-   itemClass:[AFMandrillSender class]
+   itemClass:[AFMandrillEmailAddress class]
    success:^(AFMandrillRequestOperation *operation, AFMandrillResponse *responseObject) {
      handler(responseObject.all, nil);
    }

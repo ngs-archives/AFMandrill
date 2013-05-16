@@ -1,5 +1,5 @@
 //
-//  AFMandrillSenderTests.h
+//  AFMandrillEmailAddressTests.h
 //  AFMandrill iOS Example
 //
 //  Created by Atsushi Nagase on 5/15/13.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface AFMandrillSenderTests : SenTestCase
+@interface AFMandrillEmailAddressTests : SenTestCase
 
 @end

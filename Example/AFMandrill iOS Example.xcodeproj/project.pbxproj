@@ -16,7 +16,6 @@
 		851FC3EB174297D40030D3C5 /* AFMandrillObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3EA174297D40030D3C5 /* AFMandrillObject.m */; };
 		851FC3EE1742A4490030D3C5 /* AFMandrillStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */; };
 		851FC3F11742A45A0030D3C5 /* AFMandrillTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F01742A45A0030D3C5 /* AFMandrillTime.m */; };
-		851FC3F41742A4EB0030D3C5 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */; };
 		851FC3F81742A5980030D3C5 /* AFMandrillURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F71742A5980030D3C5 /* AFMandrillURL.m */; };
 		851FC3FB1742A7850030D3C5 /* AFMandrillMessageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3FA1742A7850030D3C5 /* AFMandrillMessageContext.m */; };
 		851FC3FE1742A8300030D3C5 /* AFMandrillWebhook.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3FD1742A8300030D3C5 /* AFMandrillWebhook.m */; };
@@ -32,7 +31,7 @@
 		8544BF1A1742B1EA00142059 /* AFMandrillRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF191742B1EA00142059 /* AFMandrillRequestOperation.m */; };
 		8544BF1D1742B2F000142059 /* AFMandrillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF1C1742B2F000142059 /* AFMandrillResponse.m */; };
 		8544BF211742BA2A00142059 /* AFMandrillUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF201742BA2A00142059 /* AFMandrillUser.m */; };
-		8544BF241742C35A00142059 /* AFMandrillSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillSender.m */; };
+		8544BF241742C35A00142059 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillEmailAddress.m */; };
 		8544BF271742C37900142059 /* AFMandrillMessageTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */; };
 		8544BF2E1742D1C200142059 /* AFMandrillUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF2D1742D1C200142059 /* AFMandrillUserTests.m */; };
 		8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
@@ -65,7 +64,6 @@
 		8589604C1744025A00951070 /* ping.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960391744025A00951070 /* ping.json */; };
 		8589604D1744025A00951070 /* reject.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603A1744025A00951070 /* reject.json */; };
 		8589604E1744025A00951070 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603B1744025A00951070 /* route.json */; };
-		8589604F1744025A00951070 /* sender.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603C1744025A00951070 /* sender.json */; };
 		858960501744025A00951070 /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603D1744025A00951070 /* tag.json */; };
 		858960511744025A00951070 /* tag2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603E1744025A00951070 /* tag2.json */; };
 		858960521744025A00951070 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603F1744025A00951070 /* template.json */; };
@@ -81,7 +79,6 @@
 		8589605C174402AE00951070 /* AFMandrillActivitySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF161742B07200142059 /* AFMandrillActivitySearch.m */; };
 		8589605D174402AE00951070 /* AFMandrillAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF331742D8B700142059 /* AFMandrillAttachment.m */; };
 		8589605E174402AE00951070 /* AFMandrillDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF0D1742AD5200142059 /* AFMandrillDomain.m */; };
-		8589605F174402AE00951070 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */; };
 		85896060174402AE00951070 /* AFMandrillError.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E11741DF2C0030D3C5 /* AFMandrillError.m */; };
 		85896061174402AE00951070 /* AFMandrillExportTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF131742AF9300142059 /* AFMandrillExportTask.m */; };
 		85896062174402AE00951070 /* AFMandrillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF361742DB4C00142059 /* AFMandrillImage.m */; };
@@ -92,7 +89,7 @@
 		85896067174402AE00951070 /* AFMandrillObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3EA174297D40030D3C5 /* AFMandrillObject.m */; };
 		85896068174402AE00951070 /* AFMandrillRawMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF101742AF2400142059 /* AFMandrillRawMessage.m */; };
 		85896069174402AE00951070 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
-		8589606A174402AE00951070 /* AFMandrillSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillSender.m */; };
+		8589606A174402AE00951070 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillEmailAddress.m */; };
 		8589606B174402AE00951070 /* AFMandrillStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */; };
 		8589606C174402AE00951070 /* AFMandrillTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF071742AA1600142059 /* AFMandrillTag.m */; };
 		8589606D174402AE00951070 /* AFMandrillTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E7174297C50030D3C5 /* AFMandrillTemplate.m */; };
@@ -107,7 +104,7 @@
 		8589607A1744065700951070 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960761744065600951070 /* NSData+Base64.m */; };
 		85896080174407A100951070 /* AFMandrillUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589607F174407A100951070 /* AFMandrillUtil.m */; };
 		85896081174407A100951070 /* AFMandrillUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589607F174407A100951070 /* AFMandrillUtil.m */; };
-		85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */; };
+		85B70C4917446FF700981DB6 /* AFMandrillEmailAddressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4817446FF700981DB6 /* AFMandrillEmailAddressTests.m */; };
 		85B70C4C1744AC5300981DB6 /* AFMandrillTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */; };
 		85B70C4F1744AE5000981DB6 /* AFMandrillDomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4E1744AE4F00981DB6 /* AFMandrillDomainTests.m */; };
 /* End PBXBuildFile section */
@@ -139,8 +136,6 @@
 		851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillStats.m; sourceTree = "<group>"; };
 		851FC3EF1742A45A0030D3C5 /* AFMandrillTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillTime.h; sourceTree = "<group>"; };
 		851FC3F01742A45A0030D3C5 /* AFMandrillTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTime.m; sourceTree = "<group>"; };
-		851FC3F21742A4EB0030D3C5 /* AFMandrillEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillEmailAddress.h; sourceTree = "<group>"; };
-		851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillEmailAddress.m; sourceTree = "<group>"; };
 		851FC3F61742A5980030D3C5 /* AFMandrillURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillURL.h; sourceTree = "<group>"; };
 		851FC3F71742A5980030D3C5 /* AFMandrillURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillURL.m; sourceTree = "<group>"; };
 		851FC3F91742A7850030D3C5 /* AFMandrillMessageContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillMessageContext.h; sourceTree = "<group>"; };
@@ -169,8 +164,8 @@
 		8544BF1C1742B2F000142059 /* AFMandrillResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillResponse.m; sourceTree = "<group>"; };
 		8544BF1F1742BA2A00142059 /* AFMandrillUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUser.h; sourceTree = "<group>"; };
 		8544BF201742BA2A00142059 /* AFMandrillUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUser.m; sourceTree = "<group>"; };
-		8544BF221742C35A00142059 /* AFMandrillSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillSender.h; sourceTree = "<group>"; };
-		8544BF231742C35A00142059 /* AFMandrillSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSender.m; sourceTree = "<group>"; };
+		8544BF221742C35A00142059 /* AFMandrillEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillEmailAddress.h; sourceTree = "<group>"; };
+		8544BF231742C35A00142059 /* AFMandrillEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillEmailAddress.m; sourceTree = "<group>"; };
 		8544BF251742C37800142059 /* AFMandrillMessageTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillMessageTransaction.h; sourceTree = "<group>"; };
 		8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillMessageTransaction.m; sourceTree = "<group>"; };
 		8544BF2C1742D1C200142059 /* AFMandrillUserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUserTests.h; sourceTree = "<group>"; };
@@ -217,7 +212,6 @@
 		858960391744025A00951070 /* ping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ping.json; sourceTree = "<group>"; };
 		8589603A1744025A00951070 /* reject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reject.json; sourceTree = "<group>"; };
 		8589603B1744025A00951070 /* route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
-		8589603C1744025A00951070 /* sender.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sender.json; sourceTree = "<group>"; };
 		8589603D1744025A00951070 /* tag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
 		8589603E1744025A00951070 /* tag2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag2.json; sourceTree = "<group>"; };
 		8589603F1744025A00951070 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
@@ -230,8 +224,8 @@
 		858960761744065600951070 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		8589607E174407A100951070 /* AFMandrillUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUtil.h; sourceTree = "<group>"; };
 		8589607F174407A100951070 /* AFMandrillUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUtil.m; sourceTree = "<group>"; };
-		85B70C4717446FF700981DB6 /* AFMandrillSenderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillSenderTests.h; sourceTree = "<group>"; };
-		85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSenderTests.m; sourceTree = "<group>"; };
+		85B70C4717446FF700981DB6 /* AFMandrillEmailAddressTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillEmailAddressTests.h; sourceTree = "<group>"; };
+		85B70C4817446FF700981DB6 /* AFMandrillEmailAddressTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillEmailAddressTests.m; sourceTree = "<group>"; };
 		85B70C4A1744AC5200981DB6 /* AFMandrillTagTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillTagTests.h; sourceTree = "<group>"; };
 		85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillTagTests.m; sourceTree = "<group>"; };
 		85B70C4D1744AE4F00981DB6 /* AFMandrillDomainTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillDomainTests.h; sourceTree = "<group>"; };
@@ -280,8 +274,6 @@
 				8544BF331742D8B700142059 /* AFMandrillAttachment.m */,
 				8544BF0C1742AD5200142059 /* AFMandrillDomain.h */,
 				8544BF0D1742AD5200142059 /* AFMandrillDomain.m */,
-				851FC3F21742A4EB0030D3C5 /* AFMandrillEmailAddress.h */,
-				851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */,
 				851FC3E01741DF2C0030D3C5 /* AFMandrillError.h */,
 				851FC3E11741DF2C0030D3C5 /* AFMandrillError.m */,
 				8544BF121742AF9300142059 /* AFMandrillExportTask.h */,
@@ -304,8 +296,8 @@
 				8544BF301742D4C900142059 /* AFMandrillReceipment.m */,
 				8589602E1743F29300951070 /* AFMandrillRoute.h */,
 				8589602F1743F29300951070 /* AFMandrillRoute.m */,
-				8544BF221742C35A00142059 /* AFMandrillSender.h */,
-				8544BF231742C35A00142059 /* AFMandrillSender.m */,
+				8544BF221742C35A00142059 /* AFMandrillEmailAddress.h */,
+				8544BF231742C35A00142059 /* AFMandrillEmailAddress.m */,
 				851FC3EC1742A4490030D3C5 /* AFMandrillStats.h */,
 				851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */,
 				8544BF061742AA1600142059 /* AFMandrillTag.h */,
@@ -332,8 +324,8 @@
 				851FC40B1742A9480030D3C5 /* Supporting Files */,
 				8544BF2C1742D1C200142059 /* AFMandrillUserTests.h */,
 				8544BF2D1742D1C200142059 /* AFMandrillUserTests.m */,
-				85B70C4717446FF700981DB6 /* AFMandrillSenderTests.h */,
-				85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */,
+				85B70C4717446FF700981DB6 /* AFMandrillEmailAddressTests.h */,
+				85B70C4817446FF700981DB6 /* AFMandrillEmailAddressTests.m */,
 				85B70C4A1744AC5200981DB6 /* AFMandrillTagTests.h */,
 				85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */,
 				85B70C4D1744AE4F00981DB6 /* AFMandrillDomainTests.h */,
@@ -466,7 +458,6 @@
 				858960391744025A00951070 /* ping.json */,
 				8589603A1744025A00951070 /* reject.json */,
 				8589603B1744025A00951070 /* route.json */,
-				8589603C1744025A00951070 /* sender.json */,
 				8589603D1744025A00951070 /* tag.json */,
 				8589603E1744025A00951070 /* tag2.json */,
 				8589603F1744025A00951070 /* template.json */,
@@ -582,7 +573,6 @@
 				8589604C1744025A00951070 /* ping.json in Resources */,
 				8589604D1744025A00951070 /* reject.json in Resources */,
 				8589604E1744025A00951070 /* route.json in Resources */,
-				8589604F1744025A00951070 /* sender.json in Resources */,
 				858960501744025A00951070 /* tag.json in Resources */,
 				858960511744025A00951070 /* tag2.json in Resources */,
 				858960521744025A00951070 /* template.json in Resources */,
@@ -660,7 +650,6 @@
 				8589605C174402AE00951070 /* AFMandrillActivitySearch.m in Sources */,
 				8589605D174402AE00951070 /* AFMandrillAttachment.m in Sources */,
 				8589605E174402AE00951070 /* AFMandrillDomain.m in Sources */,
-				8589605F174402AE00951070 /* AFMandrillEmailAddress.m in Sources */,
 				85896060174402AE00951070 /* AFMandrillError.m in Sources */,
 				85896061174402AE00951070 /* AFMandrillExportTask.m in Sources */,
 				85896062174402AE00951070 /* AFMandrillImage.m in Sources */,
@@ -671,7 +660,7 @@
 				85896067174402AE00951070 /* AFMandrillObject.m in Sources */,
 				85896068174402AE00951070 /* AFMandrillRawMessage.m in Sources */,
 				85896069174402AE00951070 /* AFMandrillReceipment.m in Sources */,
-				8589606A174402AE00951070 /* AFMandrillSender.m in Sources */,
+				8589606A174402AE00951070 /* AFMandrillEmailAddress.m in Sources */,
 				8589606B174402AE00951070 /* AFMandrillStats.m in Sources */,
 				8589606C174402AE00951070 /* AFMandrillTag.m in Sources */,
 				8589606D174402AE00951070 /* AFMandrillTemplate.m in Sources */,
@@ -689,7 +678,7 @@
 				858960301743F29300951070 /* AFMandrillRoute.m in Sources */,
 				8589607A1744065700951070 /* NSData+Base64.m in Sources */,
 				85896081174407A100951070 /* AFMandrillUtil.m in Sources */,
-				85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */,
+				85B70C4917446FF700981DB6 /* AFMandrillEmailAddressTests.m in Sources */,
 				85B70C4C1744AC5300981DB6 /* AFMandrillTagTests.m in Sources */,
 				85B70C4F1744AE5000981DB6 /* AFMandrillDomainTests.m in Sources */,
 			);
@@ -710,7 +699,6 @@
 				851FC3EB174297D40030D3C5 /* AFMandrillObject.m in Sources */,
 				851FC3EE1742A4490030D3C5 /* AFMandrillStats.m in Sources */,
 				851FC3F11742A45A0030D3C5 /* AFMandrillTime.m in Sources */,
-				851FC3F41742A4EB0030D3C5 /* AFMandrillEmailAddress.m in Sources */,
 				851FC3F81742A5980030D3C5 /* AFMandrillURL.m in Sources */,
 				851FC3FB1742A7850030D3C5 /* AFMandrillMessageContext.m in Sources */,
 				851FC3FE1742A8300030D3C5 /* AFMandrillWebhook.m in Sources */,
@@ -722,7 +710,7 @@
 				8544BF1A1742B1EA00142059 /* AFMandrillRequestOperation.m in Sources */,
 				8544BF1D1742B2F000142059 /* AFMandrillResponse.m in Sources */,
 				8544BF211742BA2A00142059 /* AFMandrillUser.m in Sources */,
-				8544BF241742C35A00142059 /* AFMandrillSender.m in Sources */,
+				8544BF241742C35A00142059 /* AFMandrillEmailAddress.m in Sources */,
 				8544BF271742C37900142059 /* AFMandrillMessageTransaction.m in Sources */,
 				8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */,
 				8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */,
