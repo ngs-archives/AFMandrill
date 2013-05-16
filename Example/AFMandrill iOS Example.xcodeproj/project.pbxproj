@@ -34,7 +34,7 @@
 		8544BF211742BA2A00142059 /* AFMandrillUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF201742BA2A00142059 /* AFMandrillUser.m */; };
 		8544BF241742C35A00142059 /* AFMandrillSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillSender.m */; };
 		8544BF271742C37900142059 /* AFMandrillMessageTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */; };
-		8544BF2E1742D1C200142059 /* AFMandrillUserCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */; };
+		8544BF2E1742D1C200142059 /* AFMandrillUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF2D1742D1C200142059 /* AFMandrillUserTests.m */; };
 		8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
 		8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF331742D8B700142059 /* AFMandrillAttachment.m */; };
 		8544BF371742DB4C00142059 /* AFMandrillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF361742DB4C00142059 /* AFMandrillImage.m */; };
@@ -55,6 +55,59 @@
 		8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960281743E8B700951070 /* MockNSHTTPURLResponse.m */; };
 		8589602D1743E90700951070 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589602C1743E90700951070 /* TestHelper.m */; };
 		858960301743F29300951070 /* AFMandrillRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589602F1743F29300951070 /* AFMandrillRoute.m */; };
+		858960451744025A00951070 /* domain.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960321744025A00951070 /* domain.json */; };
+		858960461744025A00951070 /* email_address.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960331744025A00951070 /* email_address.json */; };
+		858960471744025A00951070 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960341744025A00951070 /* error.json */; };
+		858960481744025A00951070 /* export_task.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960351744025A00951070 /* export_task.json */; };
+		858960491744025A00951070 /* message_context.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960361744025A00951070 /* message_context.json */; };
+		8589604A1744025A00951070 /* message_context2.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960371744025A00951070 /* message_context2.json */; };
+		8589604B1744025A00951070 /* message_transaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960381744025A00951070 /* message_transaction.json */; };
+		8589604C1744025A00951070 /* ping.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960391744025A00951070 /* ping.json */; };
+		8589604D1744025A00951070 /* reject.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603A1744025A00951070 /* reject.json */; };
+		8589604E1744025A00951070 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603B1744025A00951070 /* route.json */; };
+		8589604F1744025A00951070 /* sender.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603C1744025A00951070 /* sender.json */; };
+		858960501744025A00951070 /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603D1744025A00951070 /* tag.json */; };
+		858960511744025A00951070 /* tag2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603E1744025A00951070 /* tag2.json */; };
+		858960521744025A00951070 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = 8589603F1744025A00951070 /* template.json */; };
+		858960531744025A00951070 /* time.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960401744025A00951070 /* time.json */; };
+		858960541744025A00951070 /* url.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960411744025A00951070 /* url.json */; };
+		858960551744025A00951070 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960421744025A00951070 /* user.json */; };
+		858960561744025A00951070 /* webhook.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960431744025A00951070 /* webhook.json */; };
+		858960571744025A00951070 /* whitelist.json in Resources */ = {isa = PBXBuildFile; fileRef = 858960441744025A00951070 /* whitelist.json */; };
+		858960581744027C00951070 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA4F174160C100969824 /* SystemConfiguration.framework */; };
+		858960591744027C00951070 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA4D174160BC00969824 /* MobileCoreServices.framework */; };
+		8589605A1744027C00951070 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2C1741600E00969824 /* CoreGraphics.framework */; };
+		8589605B1744027C00951070 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AE9189C3C24BE9BF35F0FF /* libPods.a */; };
+		8589605C174402AE00951070 /* AFMandrillActivitySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF161742B07200142059 /* AFMandrillActivitySearch.m */; };
+		8589605D174402AE00951070 /* AFMandrillAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF331742D8B700142059 /* AFMandrillAttachment.m */; };
+		8589605E174402AE00951070 /* AFMandrillDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF0D1742AD5200142059 /* AFMandrillDomain.m */; };
+		8589605F174402AE00951070 /* AFMandrillEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F31742A4EB0030D3C5 /* AFMandrillEmailAddress.m */; };
+		85896060174402AE00951070 /* AFMandrillError.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E11741DF2C0030D3C5 /* AFMandrillError.m */; };
+		85896061174402AE00951070 /* AFMandrillExportTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF131742AF9300142059 /* AFMandrillExportTask.m */; };
+		85896062174402AE00951070 /* AFMandrillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF361742DB4C00142059 /* AFMandrillImage.m */; };
+		85896063174402AE00951070 /* AFMandrillMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3DE1741DE820030D3C5 /* AFMandrillMessage.m */; };
+		85896064174402AE00951070 /* AFMandrillMessageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3FA1742A7850030D3C5 /* AFMandrillMessageContext.m */; };
+		85896065174402AE00951070 /* AFMandrillMessageSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E41741E6020030D3C5 /* AFMandrillMessageSearch.m */; };
+		85896066174402AE00951070 /* AFMandrillMessageTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */; };
+		85896067174402AE00951070 /* AFMandrillObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3EA174297D40030D3C5 /* AFMandrillObject.m */; };
+		85896068174402AE00951070 /* AFMandrillRawMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF101742AF2400142059 /* AFMandrillRawMessage.m */; };
+		85896069174402AE00951070 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
+		8589606A174402AE00951070 /* AFMandrillSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF231742C35A00142059 /* AFMandrillSender.m */; };
+		8589606B174402AE00951070 /* AFMandrillStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3ED1742A4490030D3C5 /* AFMandrillStats.m */; };
+		8589606C174402AE00951070 /* AFMandrillTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF071742AA1600142059 /* AFMandrillTag.m */; };
+		8589606D174402AE00951070 /* AFMandrillTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3E7174297C50030D3C5 /* AFMandrillTemplate.m */; };
+		8589606E174402AE00951070 /* AFMandrillTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F01742A45A0030D3C5 /* AFMandrillTime.m */; };
+		8589606F174402AE00951070 /* AFMandrillURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3F71742A5980030D3C5 /* AFMandrillURL.m */; };
+		85896070174402AE00951070 /* AFMandrillUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF201742BA2A00142059 /* AFMandrillUser.m */; };
+		85896071174402AE00951070 /* AFMandrillWebhook.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3FD1742A8300030D3C5 /* AFMandrillWebhook.m */; };
+		85896072174402AE00951070 /* AFMandrillClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 851FC3DB1741DE480030D3C5 /* AFMandrillClient.m */; };
+		85896073174402AE00951070 /* AFMandrillRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF191742B1EA00142059 /* AFMandrillRequestOperation.m */; };
+		85896074174402AE00951070 /* AFMandrillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF1C1742B2F000142059 /* AFMandrillResponse.m */; };
+		858960791744065700951070 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960761744065600951070 /* NSData+Base64.m */; };
+		8589607A1744065700951070 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 858960761744065600951070 /* NSData+Base64.m */; };
+		85896080174407A100951070 /* AFMandrillUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589607F174407A100951070 /* AFMandrillUtil.m */; };
+		85896081174407A100951070 /* AFMandrillUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8589607F174407A100951070 /* AFMandrillUtil.m */; };
+		85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,8 +171,8 @@
 		8544BF231742C35A00142059 /* AFMandrillSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSender.m; sourceTree = "<group>"; };
 		8544BF251742C37800142059 /* AFMandrillMessageTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillMessageTransaction.h; sourceTree = "<group>"; };
 		8544BF261742C37900142059 /* AFMandrillMessageTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillMessageTransaction.m; sourceTree = "<group>"; };
-		8544BF2C1742D1C200142059 /* AFMandrillUserCallTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUserCallTests.h; sourceTree = "<group>"; };
-		8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUserCallTests.m; sourceTree = "<group>"; };
+		8544BF2C1742D1C200142059 /* AFMandrillUserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUserTests.h; sourceTree = "<group>"; };
+		8544BF2D1742D1C200142059 /* AFMandrillUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUserTests.m; sourceTree = "<group>"; };
 		8544BF2F1742D4C800142059 /* AFMandrillReceipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillReceipment.h; sourceTree = "<group>"; };
 		8544BF301742D4C900142059 /* AFMandrillReceipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillReceipment.m; sourceTree = "<group>"; };
 		8544BF321742D8B700142059 /* AFMandrillAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillAttachment.h; sourceTree = "<group>"; };
@@ -152,6 +205,31 @@
 		8589602C1743E90700951070 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		8589602E1743F29300951070 /* AFMandrillRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillRoute.h; sourceTree = "<group>"; };
 		8589602F1743F29300951070 /* AFMandrillRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillRoute.m; sourceTree = "<group>"; };
+		858960321744025A00951070 /* domain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = domain.json; sourceTree = "<group>"; };
+		858960331744025A00951070 /* email_address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = email_address.json; sourceTree = "<group>"; };
+		858960341744025A00951070 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		858960351744025A00951070 /* export_task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = export_task.json; sourceTree = "<group>"; };
+		858960361744025A00951070 /* message_context.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message_context.json; sourceTree = "<group>"; };
+		858960371744025A00951070 /* message_context2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message_context2.json; sourceTree = "<group>"; };
+		858960381744025A00951070 /* message_transaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message_transaction.json; sourceTree = "<group>"; };
+		858960391744025A00951070 /* ping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ping.json; sourceTree = "<group>"; };
+		8589603A1744025A00951070 /* reject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reject.json; sourceTree = "<group>"; };
+		8589603B1744025A00951070 /* route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
+		8589603C1744025A00951070 /* sender.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sender.json; sourceTree = "<group>"; };
+		8589603D1744025A00951070 /* tag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
+		8589603E1744025A00951070 /* tag2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag2.json; sourceTree = "<group>"; };
+		8589603F1744025A00951070 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		858960401744025A00951070 /* time.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time.json; sourceTree = "<group>"; };
+		858960411744025A00951070 /* url.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = url.json; sourceTree = "<group>"; };
+		858960421744025A00951070 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		858960431744025A00951070 /* webhook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = webhook.json; sourceTree = "<group>"; };
+		858960441744025A00951070 /* whitelist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whitelist.json; sourceTree = "<group>"; };
+		858960751744065600951070 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		858960761744065600951070 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		8589607E174407A100951070 /* AFMandrillUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillUtil.h; sourceTree = "<group>"; };
+		8589607F174407A100951070 /* AFMandrillUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillUtil.m; sourceTree = "<group>"; };
+		85B70C4717446FF700981DB6 /* AFMandrillSenderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillSenderTests.h; sourceTree = "<group>"; };
+		85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillSenderTests.m; sourceTree = "<group>"; };
 		86F297D5C12D4815B9B939F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E5AE9189C3C24BE9BF35F0FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,9 +239,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851FC4071742A9480030D3C5 /* SenTestingKit.framework in Frameworks */,
+				858960581744027C00951070 /* SystemConfiguration.framework in Frameworks */,
+				858960591744027C00951070 /* MobileCoreServices.framework in Frameworks */,
 				851FC4081742A9480030D3C5 /* UIKit.framework in Frameworks */,
 				851FC4091742A9480030D3C5 /* Foundation.framework in Frameworks */,
+				8589605A1744027C00951070 /* CoreGraphics.framework in Frameworks */,
+				8589605B1744027C00951070 /* libPods.a in Frameworks */,
+				851FC4071742A9480030D3C5 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,10 +321,13 @@
 		851FC40A1742A9480030D3C5 /* AFMandrillTests */ = {
 			isa = PBXGroup;
 			children = (
+				858960311744025A00951070 /* fixtures */,
 				858960241743E8B700951070 /* helpers */,
 				851FC40B1742A9480030D3C5 /* Supporting Files */,
-				8544BF2C1742D1C200142059 /* AFMandrillUserCallTests.h */,
-				8544BF2D1742D1C200142059 /* AFMandrillUserCallTests.m */,
+				8544BF2C1742D1C200142059 /* AFMandrillUserTests.h */,
+				8544BF2D1742D1C200142059 /* AFMandrillUserTests.m */,
+				85B70C4717446FF700981DB6 /* AFMandrillSenderTests.h */,
+				85B70C4817446FF700981DB6 /* AFMandrillSenderTests.m */,
 			);
 			path = AFMandrillTests;
 			sourceTree = "<group>";
@@ -335,9 +420,11 @@
 		8586AA4C1741609B00969824 /* AFMandrill */ = {
 			isa = PBXGroup;
 			children = (
+				8589607D1744065F00951070 /* Category */,
 				851FC3FF1742A8C50030D3C5 /* AFMandrill.h */,
 				851FC3F51742A5030030D3C5 /* Object Types */,
 				8544BF1E1742B97300142059 /* Networking */,
+				85896082174407AB00951070 /* Helpers */,
 			);
 			name = AFMandrill;
 			path = ../AFMandrill;
@@ -354,6 +441,50 @@
 				8589602C1743E90700951070 /* TestHelper.m */,
 			);
 			path = helpers;
+			sourceTree = "<group>";
+		};
+		858960311744025A00951070 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				858960321744025A00951070 /* domain.json */,
+				858960331744025A00951070 /* email_address.json */,
+				858960341744025A00951070 /* error.json */,
+				858960351744025A00951070 /* export_task.json */,
+				858960361744025A00951070 /* message_context.json */,
+				858960371744025A00951070 /* message_context2.json */,
+				858960381744025A00951070 /* message_transaction.json */,
+				858960391744025A00951070 /* ping.json */,
+				8589603A1744025A00951070 /* reject.json */,
+				8589603B1744025A00951070 /* route.json */,
+				8589603C1744025A00951070 /* sender.json */,
+				8589603D1744025A00951070 /* tag.json */,
+				8589603E1744025A00951070 /* tag2.json */,
+				8589603F1744025A00951070 /* template.json */,
+				858960401744025A00951070 /* time.json */,
+				858960411744025A00951070 /* url.json */,
+				858960421744025A00951070 /* user.json */,
+				858960431744025A00951070 /* webhook.json */,
+				858960441744025A00951070 /* whitelist.json */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		8589607D1744065F00951070 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				858960751744065600951070 /* NSData+Base64.h */,
+				858960761744065600951070 /* NSData+Base64.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		85896082174407AB00951070 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8589607E174407A100951070 /* AFMandrillUtil.h */,
+				8589607F174407A100951070 /* AFMandrillUtil.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +562,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				851FC40F1742A9480030D3C5 /* InfoPlist.strings in Resources */,
+				858960451744025A00951070 /* domain.json in Resources */,
+				858960461744025A00951070 /* email_address.json in Resources */,
+				858960471744025A00951070 /* error.json in Resources */,
+				858960481744025A00951070 /* export_task.json in Resources */,
+				858960491744025A00951070 /* message_context.json in Resources */,
+				8589604A1744025A00951070 /* message_context2.json in Resources */,
+				8589604B1744025A00951070 /* message_transaction.json in Resources */,
+				8589604C1744025A00951070 /* ping.json in Resources */,
+				8589604D1744025A00951070 /* reject.json in Resources */,
+				8589604E1744025A00951070 /* route.json in Resources */,
+				8589604F1744025A00951070 /* sender.json in Resources */,
+				858960501744025A00951070 /* tag.json in Resources */,
+				858960511744025A00951070 /* tag2.json in Resources */,
+				858960521744025A00951070 /* template.json in Resources */,
+				858960531744025A00951070 /* time.json in Resources */,
+				858960541744025A00951070 /* url.json in Resources */,
+				858960551744025A00951070 /* user.json in Resources */,
+				858960561744025A00951070 /* webhook.json in Resources */,
+				858960571744025A00951070 /* whitelist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,11 +647,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8544BF2E1742D1C200142059 /* AFMandrillUserCallTests.m in Sources */,
+				8589605C174402AE00951070 /* AFMandrillActivitySearch.m in Sources */,
+				8589605D174402AE00951070 /* AFMandrillAttachment.m in Sources */,
+				8589605E174402AE00951070 /* AFMandrillDomain.m in Sources */,
+				8589605F174402AE00951070 /* AFMandrillEmailAddress.m in Sources */,
+				85896060174402AE00951070 /* AFMandrillError.m in Sources */,
+				85896061174402AE00951070 /* AFMandrillExportTask.m in Sources */,
+				85896062174402AE00951070 /* AFMandrillImage.m in Sources */,
+				85896063174402AE00951070 /* AFMandrillMessage.m in Sources */,
+				85896064174402AE00951070 /* AFMandrillMessageContext.m in Sources */,
+				85896065174402AE00951070 /* AFMandrillMessageSearch.m in Sources */,
+				85896066174402AE00951070 /* AFMandrillMessageTransaction.m in Sources */,
+				85896067174402AE00951070 /* AFMandrillObject.m in Sources */,
+				85896068174402AE00951070 /* AFMandrillRawMessage.m in Sources */,
+				85896069174402AE00951070 /* AFMandrillReceipment.m in Sources */,
+				8589606A174402AE00951070 /* AFMandrillSender.m in Sources */,
+				8589606B174402AE00951070 /* AFMandrillStats.m in Sources */,
+				8589606C174402AE00951070 /* AFMandrillTag.m in Sources */,
+				8589606D174402AE00951070 /* AFMandrillTemplate.m in Sources */,
+				8589606E174402AE00951070 /* AFMandrillTime.m in Sources */,
+				8589606F174402AE00951070 /* AFMandrillURL.m in Sources */,
+				85896070174402AE00951070 /* AFMandrillUser.m in Sources */,
+				85896071174402AE00951070 /* AFMandrillWebhook.m in Sources */,
+				85896072174402AE00951070 /* AFMandrillClient.m in Sources */,
+				85896073174402AE00951070 /* AFMandrillRequestOperation.m in Sources */,
+				85896074174402AE00951070 /* AFMandrillResponse.m in Sources */,
+				8544BF2E1742D1C200142059 /* AFMandrillUserTests.m in Sources */,
 				858960291743E8B700951070 /* FoundationNamedAdditions.m in Sources */,
 				8589602A1743E8B700951070 /* MockNSHTTPURLResponse.m in Sources */,
 				8589602D1743E90700951070 /* TestHelper.m in Sources */,
 				858960301743F29300951070 /* AFMandrillRoute.m in Sources */,
+				8589607A1744065700951070 /* NSData+Base64.m in Sources */,
+				85896081174407A100951070 /* AFMandrillUtil.m in Sources */,
+				85B70C4917446FF700981DB6 /* AFMandrillSenderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +715,8 @@
 				8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */,
 				8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */,
 				8544BF371742DB4C00142059 /* AFMandrillImage.m in Sources */,
+				858960791744065700951070 /* NSData+Base64.m in Sources */,
+				85896080174407A100951070 /* AFMandrillUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +760,7 @@
 /* Begin XCBuildConfiguration section */
 		851FC4151742A9480030D3C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F297D5C12D4815B9B939F1 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -595,6 +776,7 @@
 		};
 		851FC4161742A9480030D3C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F297D5C12D4815B9B939F1 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",

@@ -1,5 +1,5 @@
 //
-//  AFMandrillUser.h
+//  AFMandrillUtil.h
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,22 +23,11 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillObject.h"
+#import <Foundation/Foundation.h>
 
-@class AFMandrillStats;
-@interface AFMandrillUser : AFMandrillObject
+@interface AFMandrillUtil : NSObject
 
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSDate *createdAt;
-@property (nonatomic, copy) NSString *publicID;
-@property (nonatomic, assign) NSInteger reputation;
-@property (nonatomic, assign) NSInteger hourlyQuota;
-@property (nonatomic, assign) NSInteger backlog;
-@property (nonatomic, strong) AFMandrillStats *statsToday;
-@property (nonatomic, strong) AFMandrillStats *statsLast7Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast30Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast60Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast90Days;
-@property (nonatomic, strong) AFMandrillStats *statsAllTime;
++ (NSDate *)dateFromString:(NSString *)dateString;
++ (NSInteger)integerFromObject:(id)object;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AFMandrillUser.h
+//  AFMandrillUtil.m
 //  AFMandrill
 //
 //  Copyright (c) 2013 LittleApps Inc.
@@ -23,22 +23,29 @@
 //  THE SOFTWARE.
 //
 
-#import "AFMandrillObject.h"
+#import "AFMandrillUtil.h"
 
-@class AFMandrillStats;
-@interface AFMandrillUser : AFMandrillObject
+@implementation AFMandrillUtil
 
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSDate *createdAt;
-@property (nonatomic, copy) NSString *publicID;
-@property (nonatomic, assign) NSInteger reputation;
-@property (nonatomic, assign) NSInteger hourlyQuota;
-@property (nonatomic, assign) NSInteger backlog;
-@property (nonatomic, strong) AFMandrillStats *statsToday;
-@property (nonatomic, strong) AFMandrillStats *statsLast7Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast30Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast60Days;
-@property (nonatomic, strong) AFMandrillStats *statsLast90Days;
-@property (nonatomic, strong) AFMandrillStats *statsAllTime;
++ (NSDate *)dateFromString:(NSString *)dateString {
+  return [[self dateFormatter] dateFromString:dateString];
+}
+
++ (NSDateFormatter *)dateFormatter {
+  static NSDateFormatter *_dateFormatter = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    _dateFormatter = [[NSDateFormatter alloc] init];
+    [_dateFormatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss"];
+    [_dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+  });
+  return _dateFormatter;
+}
+
++ (NSInteger)integerFromObject:(id)object {
+  if([object respondsToSelector:@selector(integerValue)])
+    return [object integerValue];
+  return 0;
+}
 
 @end

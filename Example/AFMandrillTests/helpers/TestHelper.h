@@ -27,5 +27,6 @@
 @interface TestHelper : NSObject
 
 + (instancetype)sharedHelper;
++ (id)JSONWithFilename:(NSString *)filename;
 
 @end

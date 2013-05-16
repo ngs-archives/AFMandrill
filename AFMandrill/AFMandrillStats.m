@@ -24,35 +24,22 @@
 //
 
 #import "AFMandrillStats.h"
+#import "AFMandrillUtil.h"
 
 @implementation AFMandrillStats
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
   if(self = [super initWithDictionary:dictionary]) {
-
-    if([dictionary[@"sent"] isKindOfClass:[NSNumber class]])
-      self.sent = [dictionary[@"sent"] integerValue];
-
-    if([dictionary[@"hard_bounces"] isKindOfClass:[NSNumber class]])
-      self.hardBounces = [dictionary[@"hard_bounces"] integerValue];
-
-    if([dictionary[@"soft_bounces"] isKindOfClass:[NSNumber class]])
-      self.softBounces = [dictionary[@"soft_bounces"] integerValue];
-
-    if([dictionary[@"rejects"] isKindOfClass:[NSNumber class]])
-      self.rejects = [dictionary[@"rejects"] integerValue];
-
-    if([dictionary[@"complaints"] isKindOfClass:[NSNumber class]])
-      self.complaints = [dictionary[@"complaints"] integerValue];
-
-    if([dictionary[@"unsubs"] isKindOfClass:[NSNumber class]])
-      self.unsubscribes = [dictionary[@"unsubs"] integerValue];
-
-    if([dictionary[@"clicks"] isKindOfClass:[NSNumber class]])
-      self.sent = [dictionary[@"clicks"] integerValue];
-
-    if([dictionary[@"opens"] isKindOfClass:[NSNumber class]])
-      self.opens = [dictionary[@"opens"] integerValue];
+    self.sent = [AFMandrillUtil integerFromObject:dictionary[@"sent"]];
+    self.hardBounces = [AFMandrillUtil integerFromObject:dictionary[@"hard_bounces"]];
+    self.softBounces = [AFMandrillUtil integerFromObject:dictionary[@"soft_bounces"]];
+    self.rejects = [AFMandrillUtil integerFromObject:dictionary[@"rejects"]];
+    self.complaints = [AFMandrillUtil integerFromObject:dictionary[@"complaints"]];
+    self.unsubscribes = [AFMandrillUtil integerFromObject:dictionary[@"unsubs"]];
+    self.opens = [AFMandrillUtil integerFromObject:dictionary[@"opens"]];
+    self.clicks = [AFMandrillUtil integerFromObject:dictionary[@"clicks"]];
+    self.uniqueOpens = [AFMandrillUtil integerFromObject:dictionary[@"unique_opens"]];
+    self.uniqueClicks = [AFMandrillUtil integerFromObject:dictionary[@"unique_clicks"]];
   }
   return self;
 }

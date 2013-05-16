@@ -35,5 +35,7 @@
 @property (nonatomic, assign) NSInteger unsubscribes;
 @property (nonatomic, assign) NSInteger opens;
 @property (nonatomic, assign) NSInteger clicks;
+@property (nonatomic, assign) NSInteger uniqueOpens;
+@property (nonatomic, assign) NSInteger uniqueClicks;
 
 @end
