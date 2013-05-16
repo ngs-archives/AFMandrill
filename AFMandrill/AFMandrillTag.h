@@ -29,6 +29,11 @@
 @interface AFMandrillTag : AFMandrillObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, strong) AFMandrillObject *stats;
+@property (nonatomic, strong) AFMandrillStats *stats;
+@property (nonatomic, strong) AFMandrillStats *statsToday;
+@property (nonatomic, strong) AFMandrillStats *statsLast7Days;
+@property (nonatomic, strong) AFMandrillStats *statsLast30Days;
+@property (nonatomic, strong) AFMandrillStats *statsLast60Days;
+@property (nonatomic, strong) AFMandrillStats *statsLast90Days;
 
 @end

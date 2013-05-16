@@ -30,8 +30,16 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
   if(self = [super initWithDictionary:dictionary]) {
-    self.stats = [[AFMandrillStats alloc] initWithDictionary:dictionary];
     self.name = dictionary[@"tag"];
+    self.stats = [[AFMandrillStats alloc] initWithDictionary:dictionary];
+    NSDictionary *statsDic = dictionary[@"stats"];
+    if([statsDic isKindOfClass:[NSDictionary class]]) {
+      self.statsToday = [[AFMandrillStats alloc] initWithDictionary:statsDic[@"today"]];
+      self.statsLast7Days = [[AFMandrillStats alloc] initWithDictionary:statsDic[@"last_7_days"]];
+      self.statsLast30Days = [[AFMandrillStats alloc] initWithDictionary:statsDic[@"last_30_days"]];
+      self.statsLast60Days = [[AFMandrillStats alloc] initWithDictionary:statsDic[@"last_60_days"]];
+      self.statsLast90Days = [[AFMandrillStats alloc] initWithDictionary:statsDic[@"last_90_days"]];
+    }
   }
   return self;
 }
