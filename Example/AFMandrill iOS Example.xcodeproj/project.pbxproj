@@ -37,6 +37,7 @@
 		8544BF311742D4C900142059 /* AFMandrillReceipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF301742D4C900142059 /* AFMandrillReceipment.m */; };
 		8544BF341742D8B700142059 /* AFMandrillAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF331742D8B700142059 /* AFMandrillAttachment.m */; };
 		8544BF371742DB4C00142059 /* AFMandrillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF361742DB4C00142059 /* AFMandrillImage.m */; };
+		8544BF3A1745E40E00142059 /* AFMandrillMessageContextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544BF391745E40D00142059 /* AFMandrillMessageContextTests.m */; };
 		8586AA291741600E00969824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA281741600E00969824 /* UIKit.framework */; };
 		8586AA2B1741600E00969824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2A1741600E00969824 /* Foundation.framework */; };
 		8586AA2D1741600E00969824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8586AA2C1741600E00969824 /* CoreGraphics.framework */; };
@@ -176,6 +177,8 @@
 		8544BF331742D8B700142059 /* AFMandrillAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillAttachment.m; sourceTree = "<group>"; };
 		8544BF351742DB4C00142059 /* AFMandrillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillImage.h; sourceTree = "<group>"; };
 		8544BF361742DB4C00142059 /* AFMandrillImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillImage.m; sourceTree = "<group>"; };
+		8544BF381745E40D00142059 /* AFMandrillMessageContextTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMandrillMessageContextTests.h; sourceTree = "<group>"; };
+		8544BF391745E40D00142059 /* AFMandrillMessageContextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMandrillMessageContextTests.m; sourceTree = "<group>"; };
 		8586AA251741600E00969824 /* AFMandrill iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFMandrill iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8586AA281741600E00969824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8586AA2A1741600E00969824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -330,6 +333,8 @@
 				85B70C4B1744AC5200981DB6 /* AFMandrillTagTests.m */,
 				85B70C4D1744AE4F00981DB6 /* AFMandrillDomainTests.h */,
 				85B70C4E1744AE4F00981DB6 /* AFMandrillDomainTests.m */,
+				8544BF381745E40D00142059 /* AFMandrillMessageContextTests.h */,
+				8544BF391745E40D00142059 /* AFMandrillMessageContextTests.m */,
 			);
 			path = AFMandrillTests;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				85B70C4917446FF700981DB6 /* AFMandrillEmailAddressTests.m in Sources */,
 				85B70C4C1744AC5300981DB6 /* AFMandrillTagTests.m in Sources */,
 				85B70C4F1744AE5000981DB6 /* AFMandrillDomainTests.m in Sources */,
+				8544BF3A1745E40E00142059 /* AFMandrillMessageContextTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

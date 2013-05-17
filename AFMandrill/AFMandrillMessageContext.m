@@ -27,8 +27,73 @@
 
 @implementation AFMandrillMessageContext
 
+- (id)initWithDictionary:(NSDictionary *)dictionary {
+  if(self = [super initWithDictionary:dictionary]) {
+
+  }
+  return self;
+}
+
 - (BOOL)hasTemplate {
   return self.templateName && self.templateName.length > 0;
+}
+
+- (void)setGlobalMergeVar:(id)var
+                   forKey:(NSString *)key {
+  if(!self.globalMergeVars)
+    self.globalMergeVars = @{}.mutableCopy;
+  self.globalMergeVars[key] = var;
+}
+
+- (id)globalMergeVarForKey:(NSString *)key {
+  return self.globalMergeVars ? self.globalMergeVars[key] : nil;
+}
+
+- (void)setMergeVar:(id)var
+             forKey:(NSString *)key
+         receipment:(NSString *)receipment {
+  NSMutableDictionary *dict = [self mergeVarsForReceipment:receipment];
+  if(!dict) {
+    dict = @{}.mutableCopy;
+    NSDictionary *dic =
+    @{
+      @"vars": dict,
+      @"rcpt": receipment
+      };
+    if(!self.mergeVars)
+      self.mergeVars= @[].mutableCopy;
+    [self.mergeVars addObject:dic];
+  }
+  dict[key] = var;
+}
+
+- (NSMutableDictionary *)mergeVarsForReceipment:(NSString *)receipment {
+  if(self.mergeVars) {
+    for (NSDictionary *dict in self.mergeVars) {
+      if([dict[@"rcpt"] isEqualToString:receipment]) {
+        return dict[@"vars"];
+      }
+    }
+  }
+  return nil;
+}
+
+- (id)mergeVarForKey:(NSString *)key
+      withReceipment:(NSString *)receipment {
+  NSDictionary *dict = [self mergeVarsForReceipment:receipment];
+  return dict ? dict[key] : nil;
+}
+
+
+- (void)setHeaderField:(NSString *)fieldValue
+                forKey:(NSString *)key {
+  if(!self.headers)
+    self.headers= @{}.mutableCopy;
+  self.headers[key] = fieldValue;
+}
+
+- (NSString *)headerFieldForKey:(NSString *)key {
+  return self.headers ? self.headers[key] : nil;
 }
 
 @end
