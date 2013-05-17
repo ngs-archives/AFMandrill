@@ -23,7 +23,7 @@
 
   STAssertNotNil(email, nil);
 
-  STAssertEqualObjects(email.emailAddress, @"email.example@mandrillapp.com", nil);
+  STAssertEqualObjects(email.emailAddress, @"sender.example@mandrillapp.com", nil);
   STAssertEqualObjects(email.createdAt, [NSDate dateWithTimeIntervalSince1970:1357054227], nil);
 
   STAssertEquals(email.statsToday.sent,          1, nil);
